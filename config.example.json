@@ -1,0 +1,23 @@
+{
+  "baseUrl": "xxxxxxxxxx",
+  "adminKey": "xxxxxxxxxxx",
+  "pollMs": 60000,
+  "checkers": [
+    {
+      "checkerId": "upstream",
+      "label": "neuralwatt",
+      "meterSeparator": " - ",
+      "meters": [
+        { "key": "credit_balance", "format": "used_limit", "unit": "$", "decimals": 2 },
+        { "key": "energy_quota", "format": "used_limit", "decimals": 2 }
+      ]
+    },
+    {
+      "checkerId": "route",
+      "label": "routing-run",
+      "meters": [
+        { "key": "daily", "format": "used_limit", "unit": "" }
+      ]
+    }
+  ]
+}
